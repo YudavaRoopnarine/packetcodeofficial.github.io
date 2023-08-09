@@ -1,0 +1,79 @@
+/*Internet and Web Technologies (CSCI 355/655)*/
+/* Summer 2023*/
+/* Assignment 7- Scraping, Storage & Visualization*/
+/* Yudava Roopnariner*/
+
+
+
+
+/* Global Style for Body */
+body
+{   background-image: url('https://finearttutorials.com/wp-content/uploads/2022/11/M-C-Escher-Drawing-Hands-1024x768.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-family:Verdana sans-serif;
+}/*to make the menu text bold */
+.submenu li
+{
+     font-family:Verdana sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: #08b6d1;
+}
+
+
+/* Style for Navigation Menu */
+nav ul
+{
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li
+{
+    position: relative; /* Required for submenu positioning */
+    display: inline-block;
+    padding: 10px;
+}
+
+/* Style for Links in Navigation Menu */
+nav ul li a
+{    font-family:Verdana sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: #08b6d1;
+}
+#welcome
+{
+    font-family:Verdana sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: #08b6d1;
+    text-align: center;
+}
+
+/* Hidden Submenu Style */
+nav ul li ul.submenu
+{
+    display: none; /* Hidden by default */
+    position: absolute; /* Positioned relative to parent li */
+    background-color: #304b17;
+    border: 1px solid #304b17;
+}
+
+/* Style for Submenu Items */
+nav ul li ul.submenu li
+{
+    display: block;
+}
+
+/* Show Submenu on Parent Item Hover */
+nav ul li:hover ul.submenu
+{
+    display: block; /* Show on hover */
+}
